@@ -58,7 +58,7 @@
 
 
 user_database = {}
-from comfig import CSV_PATH
+from config import CSV_PATH
 import os
 from .match_fuzzy import match_fuzzy
 from .utils.csvFinder import csvFinder
