@@ -58,13 +58,16 @@
 
 
 user_database = {}
+from comfig import CSV_PATH
+import os
 from .match_fuzzy import match_fuzzy
 from .utils.csvFinder import csvFinder
 from .msgflex.flex import flex_find_row , make_carousel
 from .utils.reply import SetMessage_Object
 from linebot.models import *
-
-CSV = csvFinder(csvPath="basic_python\CSVs\รายการบ้านสองชั้น.csv")
+from .main_menu import main_menu_message
+csv_path = os.path.join(CSV_PATH,"รายการบ้านสองชั้น.csv")
+CSV = csvFinder(csvPath=csv_path)
 CSV.set_finding_column("รายการ")
 CSV.add_stop_word("อยากทราบ","ครับ","ค่ะ")
 

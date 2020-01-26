@@ -8,7 +8,7 @@ from linebot.exceptions import (
 )
 from linebot.models import *
 from config import access_token , channel_secret  #import ตัวแปรเข้ามา
-
+import os
 app = Flask(__name__)
 
 line_bot_api = LineBotApi(access_token) #channel access token
@@ -72,7 +72,7 @@ def greeting(event):
                              ,messages=[TEXT_TO_REPLY,TEXT_TO_REPLY_2])
     
     line_bot_api.link_rich_menu_to_user(user_id = USER_ID,
-                                        rich_menu_id = "richmenu-0e649c2b2c13a520f8a822251e6ef7e0")
+                                        rich_menu_id = "richmenu-5fe6cab2147a7dc35391bb6d79c3f194")
 
 
 if __name__ == "__main__":

@@ -1,2 +1,5 @@
-access_token = "WlYx5EEWp1L1pVVa9sb9rLZ9UFFhQ8zjYcW8+ZAiPw0wVfeGRy443CuxbEvibZ4z2iKVeymiMlwcIcefEbe3MsqeDI1kiWfNDRdFVn0XkgLWC99tKV72WbJXk4AVmr626lHdypODPvpXCUOrRCvXbQdB04t89/1O/w1cDnyilFU="
-channel_secret = "ab52b620e456fc84840bbb1a8232ee72"
+import os
+access_token = "y3B+LvzkDZ0GIDpKtAmXJM6kZEXlVzRZLgBG6AgofFv9NvsJuonCR/1Wk5vlkaLZrmk93Jq8Kiva+8w6qekY22MmbK/7h+PSXokIR4DxBlRZbZQHO9EOrBezCjLh+4CDLoG2yZUUAdqOcMt+NMFHcwdB04t89/1O/w1cDnyilFU="
+channel_secret = "8a29237583efd64fc1af19221992d8a3"
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+CRV_PATH = os.path.join("basic_python","CSVs")
